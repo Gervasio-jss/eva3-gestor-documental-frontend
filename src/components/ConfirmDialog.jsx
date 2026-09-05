@@ -35,9 +35,13 @@ export function ConfirmDialog({ titulo, mensaje, onConfirmar, onCancelar, confir
         <h2 id="confirm-dialog-title">{titulo}</h2>
         <p id="confirm-dialog-desc">{mensaje}</p>
         <div className="modal__actions">
-          <button type="button" className="btn btn-secondary" onClick={onCancelar}>
-            Cancelar
-          </button>
+          <button
+  type="button"
+  className="btn btn-secondary"
+  onClick={onCancelar}
+  disabled={confirmando}>
+  Cancelar
+</button>
           <button
             type="button"
             className="btn btn-danger"
