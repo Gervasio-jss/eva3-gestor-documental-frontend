@@ -175,15 +175,16 @@ Ver `docs/retrospectiva.md`.
 
 ## 13. Control de versiones (Punto 6)
 
-El repositorio del equipo debe evidenciar:
-- Commits descriptivos por integrante.
-- Uso de ramas por funcionalidad quando corresponda (por ejemplo,
-  `feature/formulario-documentos`, `feature/listado-documentos`).
-- Pull requests o registro de merges/resolución de conflictos, si
-  aplica.
+El desarrollo se realizó utilizando ramas individuales para mantener
+separados los aportes de cada integrante. Los cambios se registraron
+mediante commits descriptivos y posteriormente se integraron mediante
+Pull Requests.
 
-> Reemplazar esta sección con el enlace real al repositorio del equipo
-> antes de la entrega final.
+Repositorio del proyecto:
+`Gervasio-jss/eva3-gestor-documental-frontend`
+
+Rama de trabajo de Marina:
+`feature/Marina`
 
 ## 14. Despliegue
 

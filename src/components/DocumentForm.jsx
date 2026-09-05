@@ -59,6 +59,7 @@ export function DocumentForm({ documentoInicial, onGuardar, onCancelar, guardand
                 onChange={(e) => actualizarCampo("titulo", e.target.value)}
                 aria-invalid={Boolean(errores.titulo)}
                 aria-describedby={errores.titulo ? `${idBase}-titulo-error` : undefined}
+                maxLength={150}
                 autoFocus
               />
               {errores.titulo && (
@@ -118,6 +119,8 @@ export function DocumentForm({ documentoInicial, onGuardar, onCancelar, guardand
                 aria-describedby={errores.descripcion ? `${idBase}-descripcion-error` : undefined}
                 maxLength={500}
               />
+              <small>{valores.descripcion.length}/500 caracteres
+                </small>
               {errores.descripcion && (
                 <span id={`${idBase}-descripcion-error`} className="field-error" role="alert">
                   {errores.descripcion}

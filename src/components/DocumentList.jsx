@@ -39,7 +39,7 @@ export function DocumentList({ documentos, cargando, onVer, onEditar, onEliminar
 
   if (documentos.length === 0) {
     return (
-      <div className="empty-state">
+      <div className="empty-state"roles="status" aria-live="polite">
         <p>No hay documentos que coincidan con la búsqueda o el filtro aplicado.</p>
       </div>
     );
@@ -47,7 +47,9 @@ export function DocumentList({ documentos, cargando, onVer, onEditar, onEliminar
 
   return (
     <table className="doc-table">
-      <caption>{documentos.length} documento(s) encontrado(s)</caption>
+      <caption>
+  {documentos.length} {documentos.length === 1 ? "documento encontrado" : "documentos encontrados"}
+</caption>
       <thead>
         <tr>
           <th scope="col">Título</th>
