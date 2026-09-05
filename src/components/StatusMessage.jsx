@@ -13,7 +13,11 @@ export function StatusMessage({ tipo = "info", mensaje }) {
   const rolPorTipo = tipo === "error" ? "alert" : "status";
 
   return (
-    <div className={`status-banner ${tipo}`} role={rolPorTipo} aria-live="polite">
+<div
+  className={`status-banner ${tipo}`}
+  role={rolPorTipo}
+  aria-live="polite"
+  aria-atomic="true">
       <span>{mensaje}</span>
     </div>
   );
