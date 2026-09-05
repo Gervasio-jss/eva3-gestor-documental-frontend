@@ -181,7 +181,7 @@ mediante commits descriptivos y posteriormente se integraron mediante
 Pull Requests.
 
 Repositorio del proyecto:
-`Gervasio-jss/eva3-gestor-documental-frontend`
+https://github.com/Gervasio-jss/eva3-gestor-documental-frontend
 
 Rama de trabajo de Marina:
 `feature/Marina`
