@@ -1,9 +1,14 @@
 import { TIPOS_DOCUMENTO } from "../services/documentosApi";
 
-function nombreTipofunction formatearFecha(fechaISO) {
+function nombreTipo(tipo) {
+  return TIPOS_DOCUMENTO.find((t) => t.id === tipo)?.nombre || tipo;
+}
+
+function formatearFecha(fechaISO) {
   const [anio, mes, dia] = fechaISO.split("-");
   return `${dia}-${mes}-${anio}`;
 }
+
 /**
  * DocumentDetail.jsx — Visualización de un documento.
  * Responsabilidad: mostrar el detalle completo de un documento en un

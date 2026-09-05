@@ -13,6 +13,8 @@ export function SearchFilter({ busqueda, tipo, onBusquedaChange, onTipoChange })
     onBusquedaChange("");
     onTipoChange("");
   };
+
+  return (
     <form className="filters" role="search" aria-label="Buscar y filtrar documentos">
       <div className="field">
         <label htmlFor="busqueda">Buscar</label>
