@@ -9,9 +9,9 @@ export function Sidebar() {
   return (
     <aside className="sidebar" aria-label="Navegación principal">
       <div className="sidebar__brand">
-        Gestor Documental
+      <h1>Gestor Documental</h1>
         <small>Escuela Básica G-733 · Chorombo Bajo</small>
-      </div>
+        </div>
       <nav>
         <ul>
           <li>
