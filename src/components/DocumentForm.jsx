@@ -118,6 +118,8 @@ export function DocumentForm({ documentoInicial, onGuardar, onCancelar, guardand
                 aria-describedby={errores.descripcion ? `${idBase}-descripcion-error` : undefined}
                 maxLength={500}
               />
+              <small>{valores.descripcion.length}/500 caracteres
+                </small>
               {errores.descripcion && (
                 <span id={`${idBase}-descripcion-error`} className="field-error" role="alert">
                   {errores.descripcion}
