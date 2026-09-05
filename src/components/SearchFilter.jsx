@@ -9,7 +9,10 @@ import { TIPOS_DOCUMENTO } from "../services/documentosApi";
  * alimenta a useDocumentos a través del componente padre.
  */
 export function SearchFilter({ busqueda, tipo, onBusquedaChange, onTipoChange }) {
-  return (
+  const limpiarFiltros = () => {
+    onBusquedaChange("");
+    onTipoChange("");
+  };
     <form className="filters" role="search" aria-label="Buscar y filtrar documentos">
       <div className="field">
         <label htmlFor="busqueda">Buscar</label>
@@ -32,6 +35,11 @@ export function SearchFilter({ busqueda, tipo, onBusquedaChange, onTipoChange })
           ))}
         </select>
       </div>
+        {(busqueda || tipo) && (
+  <button type="button" className="btn btn-secondary" onClick={limpiarFiltros}>
+    Limpiar filtros
+  </button>
+)}
     </form>
   );
 }
