@@ -59,6 +59,7 @@ export function DocumentForm({ documentoInicial, onGuardar, onCancelar, guardand
                 onChange={(e) => actualizarCampo("titulo", e.target.value)}
                 aria-invalid={Boolean(errores.titulo)}
                 aria-describedby={errores.titulo ? `${idBase}-titulo-error` : undefined}
+                maxLength={150}
                 autoFocus
               />
               {errores.titulo && (
